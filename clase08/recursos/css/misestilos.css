@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+   
+    
+}
+#menu{
+    background: rgb(62, 200, 247);
+}
+#menutex{
+    
+    font-size: 15px;
+    
+}
+
+#tokio{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+
+}
+#tokiotex{
+    background-color: rgb(228, 108, 108);
+    border-radius: 15px;
+    box-shadow: cornflowerblue 3px 5px;
+    color: white;
+    font-size: 35px;
+}
+#re{
+    text-align: center;
+    margin: 15px;
+    font-size: 25px;
+    color: cornflowerblue;
+}
+ /*Menu Horizontal*/
+ ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul li {
+    list-style: none;
+    margin: 2px 5px;
+    padding: 3px;
+    
+}
+/* botones primer menu*/
+
+.boton{
+    background-color: rgb(195, 209, 255);
+    font-size: 18px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    position: relative;
+    border-radius: 20px;
+
+    margin: 15px;
+}
+.boton.styleOne::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border: 3px solid rgb(52, 168, 235);
+    border-radius: 25px;
+    transition: top, bottom,left,right, 500ms ease-in-out;
+}
+
+.boton.styleOne:hover::before{
+   top: -4px;
+   bottom: -4px;
+   left: -4px;
+   right: -4px;
+}
+
+.boton.styleTwo::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    border-radius: 20px;
+   
+    background-color: rgba(147, 177, 243, 0.849);
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.boton.styleTwo:hover::before{ transform: scaleX(1); }
+.boton.styleTwo { z-index: 1; }
+
+.boton.styleThree::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    background-color: rgb(151, 167, 238);
+    border-radius: 40%;
+    transition: transform 500ms ease-in-out;
+    transform: scale(1.5);
+}
+.boton.styleThree:hover::before{ transform:scale(0); }
+.boton.styleThree{
+    z-index: 1;
+    overflow: hidden;
+    background-color: rgba(73, 131, 255, 0.849);
+}
+.boton.styleFour::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: rgba(127, 164, 243, 0.849);
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+}
+.boton.styleFour:hover::before{ transform: scaleX(1); } 
+/*botones menu2*/
+.miBoton {
+    background-color: rgb(195, 209, 255);
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    position: relative;
+    border-radius: 25px;
+ }
+
+ .miBoton a:hover{
+     color: white;
+ }
+ .miBoton::before{
+     content: '';
+     position: absolute;
+     top: 0px;
+     bottom: 0px;
+     left: 0px;
+     right: 0px;
+     border: 3px solid rgb(100, 172, 240);
+     border-radius: 25px;
+     transition: top, bottom,left,right, 500ms ease-in-out;
+ }
+
+ .miBoton:hover::before{
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+ }
+ #secDetalles{
+
+    padding-left: 500px;
+    padding-right: 500px;
+    color: burlywood;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+
+ #horario{
+     color: blue;
+     background-color: cornflowerblue;
+     margin: 15px;
+     font-size: 18px;
+     
+    
+}
+#sup{
+    font-size: 20px;
+}
+#horario td{
+    padding: 5px;
+}
+#des{
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 10px;
+   
+}
